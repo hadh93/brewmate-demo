@@ -17,5 +17,5 @@ public class CoffeeRecipe {
 
     private String title;
 
-
+// TODO: 한 개의 레시피는 여러개의 '지침' 이 있어야 하는데, 이것을 어떻게 구현할 것인지?
 }
