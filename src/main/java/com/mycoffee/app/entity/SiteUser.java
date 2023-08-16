@@ -1,4 +1,4 @@
-package com.mycoffee.app;
+package com.mycoffee.app.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

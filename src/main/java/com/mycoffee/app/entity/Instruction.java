@@ -1,9 +1,6 @@
-package com.mycoffee.app;
+package com.mycoffee.app.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.time.Duration;
 
@@ -16,5 +13,9 @@ public class Instruction {
     private String text;
 
     private Duration duration;
+
+    @ManyToOne
+    @JoinColumn(name="coffee_recipe_id")
+    private CoffeeRecipe coffeeRecipe;
 
 }
